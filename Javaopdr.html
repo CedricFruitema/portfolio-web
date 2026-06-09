@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- --------- UNICONS ---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- --------- FAVICON ---------- -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+
+    <title>Portfolio | Cedric</title>
+</head>
+<body>
+
+   <div class="container">
+    <!-- --------------- HEADER --------------- -->
+      <nav id="header">
+        <div class="nav-logo">
+            <p class="nav-name">Java Opdracht</p>
+            <span>.</span>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+                <li class="nav_list">
+                    <a href="index.html" class="nav-link active-link">Home</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="PojectIOT.html" class="nav-link active-link">project IOT</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="Javaopdr.html" class="nav-link active-link">Java Opdracht</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="index.html" class="nav-link active-link">project3</a>
+                    <div class="circle"></div>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="nav-menu-btn">
+            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
+
+<!----------------- MAIN Project ------------------->
+   <main class="project-page">
+    <div style="height: 90px;"></div>
+    <div class="project-detail-box">
+        <img src="Images/Screenshot 2026-06-09 134505.png" alt="3D Print" class="project-detail-img">
+        <div class="project-detail-content">
+            <h2>Java Opdracht - Wakken, IJsberen en Pinguïns</h2>
+            <p>
+Voor de eindopdracht van Java heb ik in Apache Netbeans een dobbelsteenspel gemaakt. Het programma is opgesplitst in vijf klassen.  
+De klasse Dobbelsteen vormt de kern van het spel en berekent via een  array het aantal wakken, ijsberen en pinguïns. 
+De klasse Spel beheert een ArrayList van dobbelstenen en controleert antwoorden. De score wordt bijgehouden in een aparte Score klasse.  
+De grafische interface is gebouwd met Java Swing.  
+DobbelsteenPanel tekent de dobbelstenen via Graphics2D, waarbij de middelste stip blauw oplicht als wak.  
+MainFrame bouwt het volledige venster op met invoervelden, knoppen en een scorebord. Tot slot zijn er JUnit 5 testklassen geschreven voor alle logische klassen. 
+
+            </p>
+        </div>
+        <a href="index.html" class="back-btn">
+            <i class="uil uil-arrow-left"></i> Back to Home
+        </a>
+    </div>
+</main>
+<!----------------- MAIN Project End ------------------->
+
+<!------------------ FOOTER ------------------>
+    <footer>
+        <div class="top-footer">
+            <div style="height: 250px;"></div>
+            <p>Cedric Fruitema .</p>
+        </div>
+        <div class="middle-footer">
+            <ul class="footer-menu">
+                <li class="footer_menu_list">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#about">About</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#projects">Projects</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+         
+        <!-- <div class="bottom-footer">
+            <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Cedric Fruitema</a> - All rights reserved</p>
+        </div> -->
+    </footer>
+
+<!------------------ FOOTER End ------------------>
+
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+    const sr = ScrollReveal({
+        origin: 'top',
+        distance: '80px',
+        duration: 700,
+        reset: true
+    })
+
+    sr.reveal('.project-detail-box', {})
+    sr.reveal('.back-btn', { delay: 100 })
+</script>
+
+    </div>
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
+
+       <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+
+    <!-- ----- MAIN JS ----- -->
+    <script src="main.js"></script>
+</body>
+</html>
