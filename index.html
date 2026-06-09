@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- --------- UNICONS ---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- --------- FAVICON ---------- -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+
+    <title>Portfolio | Cedric</title>
+</head>
+<body>
+
+   <div class="container">
+    <!-- --------------- HEADER --------------- -->
+      <nav id="header">
+        <div class="nav-logo">
+            <p class="nav-name">Cedric Fruitema</p>
+            <span>.</span>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+                <li class="nav_list">
+                    <a href="#home" class="nav-link active-link">Home</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#about" class="nav-link">About</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <div class="circle"></div>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="nav-menu-btn">
+            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
+
+
+    <!-- -------------- MAIN ---------------- -->
+    <main class="wrapper">
+       <!-- -------------- FEATURED BOX ---------------- -->
+       <section class="featured-box" id="home">
+          <div class="featured-text">
+            <div class="featured-text-card">
+                <span>Cedric Fruitema</span>
+            </div>
+            <div class="featured-name">
+                <p>I'm a <span class="typedText"></span></p>
+            </div>
+            <div class="featured-text-info">
+                <p> My name is Cedric Fruitema, I am 20 years old and i have a passion for Coding
+                </p>
+            </div>
+            <div class="featured-text-btn">
+                    <a href="https://github.com/Ninzack" target="_blank" class="icon"><i class="uil uil-github-alt"></i></a>
+                
+            </div>
+          </div>
+          
+          <div class="scroll-icon-box">
+            <a href="#about" class="scroll-btn">
+                <i class="uil uil-mouse-alt"></i>
+                <p>Scroll Down</p>
+            </a>
+          </div>
+
+       </section>
+       <!-- -------------- ABOUT BOX ---------------- -->
+       <section class="section" id="about">
+          <div class="top-header">
+            <h1>About Me</h1>
+          </div>
+          <div class="row">
+            <div class="col">
+                <div class="about-info">
+                    <h3>My introduction</h3>
+                    <p>I have experience in a few coding fields like C# and HTML. i have made a few test webs for school and also a full website for a petting zoo. (https://kinderboerderijdeheij.nl) the website has updated alot since we worked on it. right now different people are managing and updating it
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>PHP</span>
+                        <span>JAVA</span>
+                        <span>C#</span>
+
+                    </div>
+                </div>
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>programs</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>Visual Studio</span>
+                        <span>Visual Studio Code</span>
+                        <span>Xampp Control Panel</span>
+                        <span>GitHub</span>
+                        <span>unity</span>
+                        <span>android studio</span>
+                        <span>Microsoft Bussiness Central</span>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="col">
+                <div class="about-info">
+                    <h3>My Life</h3>
+                    <p> I am 20 years old and studying Software Development at Firda in Leeuwarden. In my free time, I enjoy gaming, watching anime, and hanging out with friends. I also like relaxing and doing whatever I feel like in my spare time.
+                </div>
+            </div>
+          </div>
+       </section>
+
+       <!-- -------------- PROJECT BOX ---------------- -->
+
+   <section class="section" id="projects">
+    <div class="top-header">
+        <h1>Projects</h1>
+    </div>
+    <div class="projects-row">
+        <div class="project-box">
+            <h3>Project IOT</h3>
+            <p> voor dit project maaktte ik met behulp van de esp-32. een simpele quizbox met invulbare vragen die je aan het einde een score kunnen geven van hoeveel je goed of fout had.
+            </p>
+            <a href="PojectIOT.html" class="project-btn">View More</a>
+        </div>
+        <div class="project-box">
+            <h3>Java Opdracht</h3>
+            <p>als eindopdracht voor java moesten we een spel maken genaamd: Wakken, Ijsberen en Pinguins</p>
+            <a href="Javaopdr.html" class="project-btn">View More</a>
+        </div>
+        <div class="project-box">
+            <h3>Project Title</h3>
+            <p>Short description of the project goes here.</p>
+            <a href="#" class="project-btn">View More</a>
+        </div>
+    </div>
+</section>
+
+       <!-- -------------- CONTACT BOX ---------------- -->
+
+       <section class="section" id="contact">
+          <div class="top-header">
+            <h1>Get in touch</h1>
+          </div>
+          <div class="row">
+             <div class="col">
+                <div class="contact-info">
+                    <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+                    <p><i class="uil uil-envelope"></i> Cedric.fruitema2@gmail.com</p>
+                    <p><i class="uil uil-phone"></i> mobile: +31 6 81610425</p>
+                </div>
+             </div>
+          </div>
+       </section>
+
+    </main>
+
+
+    <!-- --------------- FOOTER --------------- -->
+    <footer>
+        <div class="top-footer">
+            <p>Cedric Fruitema .</p>
+        </div>
+        <div class="middle-footer">
+            <ul class="footer-menu">
+                <li class="footer_menu_list">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#about">About</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#projects">Projects</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+         
+        <div class="bottom-footer">
+            <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Cedric Fruitema</a> - All rights reserved</p>
+        </div>
+    </footer>
+
+    </div>
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
+
+       <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+
+    <!-- ----- MAIN JS ----- -->
+    <script src="main.js"></script>
+</body>
+</html>
