@@ -441,49 +441,202 @@ h3{
 }
 
 /* ----- CONTACT FORM ----- */
-.form-control{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
+/* layout */
+#contact .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: stretch;
+  width: 100%;
 }
-.form-inputs{
-    display: flex;
-    gap: 10px;
-    width: 100%;
+
+#contact .col {
+  width: 100%;
 }
-.input-field{
-    width: 50%;
-    height: 55px;
-    background: transparent;
-    border: 2px solid #AAA;
-    border-radius: 10px;
-    padding-inline: 20px;
-    outline: none;
+
+/* info card */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 28px;
+  background: #fff;
+  border: 1.5px solid var(--second-color);
+  border-radius: 14px;
+  height: 100%;
+  box-sizing: border-box;
 }
-textarea{
-    width: 100%;
-    height: 250px;
-    background: transparent;
-    border: 2px solid #AAA;
-    border-radius: 10px;
-    padding: 15px 20px;
-    outline: none;
-    resize: none;
+
+.contact-info-header h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 4px;
+  color: var(--color-dark);
 }
-.form-button>.btn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--second-color);
-    color: var(--color-white);
+
+.contact-info-header p {
+  font-size: 13px;
+  color: #888;
+  margin: 0;
 }
-.form-button>.btn:hover{
-    background: #00B5E7;
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
-.form-button i{
-    font-size: 18px;
-    rotate: -45deg;
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.contact-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1.5px solid var(--second-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contact-icon i {
+  font-size: 18px;
+  color: var(--second-color);
+}
+
+.contact-label {
+  display: block;
+  font-size: 11px;
+  color: #aaa;
+  margin-bottom: 2px;
+}
+
+.contact-value {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-dark);
+}
+
+/* socials */
+.contact-socials {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social-links {
+  display: flex;
+  gap: 10px;
+}
+
+.social-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  border: 1.5px solid var(--second-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.social-btn i {
+  font-size: 17px;
+  color: var(--second-color);
+}
+
+.social-btn:hover {
+  background: var(--second-color);
+}
+
+.social-btn:hover i {
+  color: #fff;
+}
+
+/* form card */
+.form-control {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 28px;
+  background: #fff;
+  border: 1.5px solid var(--second-color);
+  border-radius: 14px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.form-inputs {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}
+
+.input-field {
+  width: 50%;
+  height: 50px;
+  background: #fff;
+  border: 1.5px solid #b3d4f0;
+  border-radius: 10px;
+  padding-inline: 16px;
+  outline: none;
+  transition: border-color 0.2s;
+  color: var(--color-dark);
+}
+
+.input-field:focus {
+  border-color: var(--second-color);
+}
+
+textarea {
+  width: 100%;
+  flex: 1;
+  min-height: 200px;
+  background: #fff;
+  border: 1.5px solid #b3d4f0;
+  border-radius: 10px;
+  padding: 14px 16px;
+  outline: none;
+  resize: none;
+  color: var(--color-dark);
+  font-family: inherit;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+
+textarea:focus {
+  border-color: var(--second-color);
+}
+
+.form-button > .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 12px;
+  background: var(--second-color);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.form-button > .btn:hover {
+  opacity: 0.85;
+}
+
+.form-button i {
+  font-size: 18px;
+  rotate: -45deg;
 }
 
 /* ----- FOOTER BOX ----- */
@@ -692,4 +845,33 @@ footer{
 
 .back-btn i {
     font-size: 20px;
+}
+
+/* ----- DOWNLOAD BUTTON ----- */
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    background: var(--first-color);
+    color: var(--color-white);
+    border: none;
+    border-radius: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    transition: .4s;
+    box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
+}
+
+.download-btn:hover {
+    background: var(--first-color-hover);
+    transform: translateY(-2px);
+    box-shadow: 1px 12px 15px 2px var(--first-shadow-color);
+}
+
+.download-btn i {
+    font-size: 18px;
 }

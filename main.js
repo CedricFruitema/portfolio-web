@@ -30,7 +30,6 @@ function myMenuFunction(){
     }
   }
 
-
 /* ----- TYPING EFFECT ----- */
  var typingEffect = new Typed(".typedText",{
     strings : ["Designer","Student","Developer"],
@@ -39,7 +38,6 @@ function myMenuFunction(){
     backSpeed : 80,
     backDelay : 2000
  })
-
 
 /* ----- ## -- SCROLL REVEAL ANIMATION -- ## ----- */
  const sr = ScrollReveal({
@@ -56,7 +54,6 @@ sr.reveal('.featured-text-info',{delay: 100})
 sr.reveal('.featured-text-btn',{delay: 100})
 sr.reveal('.social_icons',{delay: 100})
 sr.reveal('.featured-image',{delay: 200})
-
 
 /* -- PROJECT BOX -- */
 sr.reveal('.project-box',{interval: 100})
@@ -88,10 +85,7 @@ const srRight = ScrollReveal({
 srRight.reveal('.skills-box',{delay: 50})
 srRight.reveal('.form-control',{delay: 50})
 
-
-
 /* ----- CHANGE ACTIVE LINK ----- */
-
 const sections = document.querySelectorAll('section[id]')
 
 function scrollActive() {
@@ -113,11 +107,7 @@ function scrollActive() {
     }
   })
 }
-
 window.addEventListener('scroll', scrollActive)
-
-
-
 document.getElementById('downloadButton').addEventListener('click', function() {
   // Create a Blob containing the file data
   var fileData = 'Hello, this is a sample file content.';

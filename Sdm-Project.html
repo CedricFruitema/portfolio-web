@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- --------- UNICONS ---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- --------- FAVICON ---------- -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+
+    <title>Portfolio | Cedric</title>
+</head>
+<body>
+
+   <div class="container">
+    <!-- --------------- HEADER --------------- -->
+      <nav id="header">
+        <div class="nav-logo">
+            <p class="nav-name">Project SDM and C#</p>
+            <span>.</span>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+                <li class="nav_list">
+                    <a href="index.html" class="nav-link active-link">Home</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="PojectIOT.html" class="nav-link active-link">project IOT</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="Javaopdr.html" class="nav-link active-link">Java Opdracht</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="Sdm-Project.html" class="nav-link active-link">project SDM en C#</a>
+                    <div class="circle"></div>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="nav-menu-btn">
+            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
+
+<!----------------- MAIN Project ------------------->
+   <main class="project-page">
+    <div style="height: 90px;"></div>
+    <div class="project-detail-box">
+        <img src="Images/banana-7h4m9.webp" alt="3D Print" class="project-detail-img">
+        <div class="project-detail-content">
+            <h2>Project SDM en C#<C id=""></C></h2>
+            <p>fuck ass sdm </p>
+        </div>
+         <a href="pdf-files/Plan van aanpak Csharp.pdf" download="Plan van aanpak Csharp.pdf" class="download-btn"><i class="uil uil-file-download"></i> Download Plan van aanpak</a>
+        <a href="index.html" class="back-btn">
+            <i class="uil uil-arrow-left"></i> Back to Home
+        </a>
+    </div>
+</main>
+<!----------------- MAIN Project End ------------------->
+
+<!------------------ FOOTER ------------------>
+    <footer>
+        <div class="top-footer">
+            <div style="height: 250px;"></div>
+            <p>Cedric Fruitema .</p>
+        </div>
+        <div class="middle-footer">
+            <ul class="footer-menu">
+                <li class="footer_menu_list">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#about">About</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#projects">Projects</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+<!------------------ FOOTER End ------------------>
+
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+    const sr = ScrollReveal({
+        origin: 'top',
+        distance: '80px',
+        duration: 700,
+        reset: true
+    })
+
+    sr.reveal('.project-detail-box', {})
+    sr.reveal('.back-btn', { delay: 100 })
+</script>
+
+    </div>
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
+
+       <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+
+    <!-- ----- MAIN JS ----- -->
+    <script src="main.js"></script>
+</body>
+</html>
